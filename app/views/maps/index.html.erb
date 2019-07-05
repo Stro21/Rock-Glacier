@@ -2,9 +2,9 @@
 
 <h1>Maps</h1>
 
-<table>
+<table id="map" class="table table-hover">
   <thead>
-    <tr>
+    <tr class="table-active">
       <th>Name</th>
       <th>Latitude</th>
       <th>Longitude</th>
@@ -20,9 +20,9 @@
         <td><%= map.latitude %></td>
         <td><%= map.longitude %></td>
         <td><%= map.user %></td>
-        <td><%= link_to 'Show', map %></td>
-        <td><%= link_to 'Edit', edit_map_path(map) %></td>
-        <td><%= link_to 'Destroy', map, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', map, class: "btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_map_path(map), class: "btn btn-success" %></td>
+        <td><%= link_to 'Destroy', map, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
