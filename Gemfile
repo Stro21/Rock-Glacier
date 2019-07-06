@@ -40,6 +40,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 # Use Cancancan for role access
 gem 'cancancan'
+# Use Figaro for environment variables
+gem "figaro"
+# Use omniauth-facebook to login with an facebook acount. 
+gem 'omniauth-facebook'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
