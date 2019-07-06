@@ -1,6 +1,6 @@
 class MapsController < ApplicationController
-  before_action :set_map, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
+  load_and_authorize_resource
   # GET /maps
   # GET /maps.json
   def index
