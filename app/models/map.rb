@@ -1,6 +1,7 @@
 class Map < ApplicationRecord
   before_create :add_remaining_data
   belongs_to :user
+  enum rock_glacier_type: [:rock_glacier, :relic, :intact, :no_rock_glacier]
 
   def add_remaining_data
     add_center
